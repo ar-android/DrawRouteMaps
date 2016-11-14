@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "305668264758",
+    "firebase_url": "https://drawroutemaps-149418.firebaseio.com",
+    "project_id": "drawroutemaps-149418",
+    "storage_bucket": "drawroutemaps-149418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305668264758:android:3bad4ee622a8f607",
+        "android_client_info": {
+          "package_name": "com.ahmadrosid.drawroutemaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305668264758-8uenjb17fl3c03c7htosbgup49r9l98b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ahmadrosid.drawroutemaps",
+            "certificate_hash": "4A842D89BECA5CB3444A15214CB18EEC86142AC9"
+          }
+        },
+        {
+          "client_id": "305668264758-u4riail7o7qek0045qa73djc286ih69d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8meg6icPk1u6x4uszx2Wn6ZS3ZmcaQP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305668264758-u4riail7o7qek0045qa73djc286ih69d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
