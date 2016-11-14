@@ -23,8 +23,7 @@ dependencies {
 }
 ```
 
-#Add on your readi google maps
-JAVA
+In Your GoogleMap Ready
 -----
 ```java
     @Override
