@@ -52,4 +52,4 @@ If you want to change color of line route just add this in your resource
 LICENCE
 -----
 
-PercentView by [Ahmad Rosid](http://ahmadrosid.com/) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+DrawRouteMaps by [Ahmad Rosid](http://ahmadrosid.com/) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
