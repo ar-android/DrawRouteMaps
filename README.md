@@ -44,6 +44,10 @@ In Your GoogleMap Ready
         mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, displaySize.x, 250, 30));
     }
 ```
+If you want to change color of line route just add this in your resource
+```xml
+    <color name="colorRouteLine">#FF4081</color>
+```
 
 LICENCE
 -----
