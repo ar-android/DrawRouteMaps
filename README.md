@@ -1,5 +1,5 @@
 # DrawRouteMaps
-Library for draw route maps between two point LatLang
+If you want to add route maps feature in your apps you can use DrawRouteMaps to make you work more easier. This is lib will help you to draw route maps between two point LatLng.
 
 ![alt tag](https://github.com/ar-android/DrawRouteMaps/raw/master/example-app.png)
 
