@@ -5,8 +5,8 @@ If you want to add route maps feature in your apps you can use DrawRouteMaps to 
 
 This is an Android project allowing to realize a PercentView instead of LinearLayout in the simplest way possible.
 
-#Usage
-Make sure your app have ready enable Google Map API and Google Direction API. Then you can use this library and follow this task to ad DrawRouteMaps into your project.
+# Usage
+Make sure your app have allready enable Google Map API and Google Direction API. Then you can use this library and follow this task to ad DrawRouteMaps into your project.
 
 Add support jitpact repository in root build.gradle at the end of repositories:
 ```gradle
