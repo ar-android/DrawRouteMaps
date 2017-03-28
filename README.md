@@ -3,8 +3,6 @@ If you want to add route maps feature in your apps you can use DrawRouteMaps to 
 
 ![alt tag](https://github.com/ar-android/DrawRouteMaps/raw/master/example-app.png)
 
-This is an Android project allowing to realize a PercentView instead of LinearLayout in the simplest way possible.
-
 # Usage
 Make sure your app have allready enable Google Map API and Google Direction API. Then you can use this library and follow this task to integrate DrawRouteMaps into your project.
 
