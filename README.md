@@ -17,7 +17,7 @@ allprojects {
 Add dependencies :
 ```gradle
 dependencies {
-    compile 'com.github.ar-android:DrawRouteMaps:1.0.0'
+    compile 'com.github.bareq:DrawRouteMaps:1.0.1'
 }
 ```
 
