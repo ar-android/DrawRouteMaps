@@ -4,6 +4,10 @@ import android.content.Context;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Polyline;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by ocittwo on 11/14/16.
@@ -13,23 +17,41 @@ import com.google.android.gms.maps.model.LatLng;
  * @Github https://github.com/ar-android
  * @Web http://ahmadrosid.com
  */
-
 public class DrawRouteMaps {
-
     private static DrawRouteMaps instance;
     private Context context;
+    private List<Polyline> polies;
 
     public static DrawRouteMaps getInstance(Context context) {
-        instance = new DrawRouteMaps();
+        if (instance == null) {
+            instance = new DrawRouteMaps();
+        }
         instance.context = context;
         return instance;
     }
 
-    public DrawRouteMaps draw(LatLng origin, LatLng destination, GoogleMap googleMap){
+    private DrawRouteMaps() {
+        polies = new ArrayList<>();
+    }
+
+    public DrawRouteMaps draw(LatLng origin, LatLng destination, GoogleMap googleMap) {
         String url_route = FetchUrl.getUrl(origin, destination);
         DrawRoute drawRoute = new DrawRoute(googleMap);
         drawRoute.execute(url_route);
         return instance;
+    }
+
+    void addToPolies(Polyline polygon) {
+        this.polies.add(polygon);
+    }
+
+    public void removeLines() {
+        if (polies != null) {
+            for (Polyline polygon : polies) {
+                polygon.remove();
+            }
+            polies.clear();
+        }
     }
 
     public static Context getContext() {
