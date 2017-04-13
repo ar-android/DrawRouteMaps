@@ -47,6 +47,11 @@ If you want to change color of line route just add this in your resource
     <color name="colorRouteLine">#FF4081</color>
 ```
 
+Remove route
+-----
+```java
+    DrawRouteMaps.getInstance(this).removeLines();
+```
 # License
 
     Copyright 2017 Ahmad Rosid
