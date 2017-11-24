@@ -34,8 +34,8 @@ public class DrawRouteMaps {
         polies = new ArrayList<>();
     }
 
-    public DrawRouteMaps draw(LatLng origin, LatLng destination, GoogleMap googleMap) {
-        String url_route = FetchUrl.getUrl(origin, destination);
+    public DrawRouteMaps draw(LatLng origin, LatLng destination, TravelMode travelMode, GoogleMap googleMap) {
+        String url_route = FetchUrl.getUrl(origin, destination, travelMode);
         DrawRoute drawRoute = new DrawRoute(googleMap);
         drawRoute.execute(url_route);
         return instance;
