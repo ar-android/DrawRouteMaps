@@ -82,6 +82,9 @@ Thumbs.db
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+.idea/*
+.idea/misc.xml
+.idea/modules.xml
 
 # Package Files #
 *.jar
