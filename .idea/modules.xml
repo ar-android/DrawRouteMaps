@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DrawRouteMaps.iml" filepath="$PROJECT_DIR$/DrawRouteMaps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DrawRouteMaps.iml" filepath="$PROJECT_DIR$/DrawRouteMaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drawroutemap/drawroutemap.iml" filepath="$PROJECT_DIR$/drawroutemap/drawroutemap.iml" />
       <module fileurl="file://$PROJECT_DIR$/drawroutemap/drawroutemap.iml" filepath="$PROJECT_DIR$/drawroutemap/drawroutemap.iml" />
     </modules>
   </component>
