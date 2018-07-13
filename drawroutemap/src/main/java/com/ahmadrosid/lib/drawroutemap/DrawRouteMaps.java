@@ -5,6 +5,8 @@ import android.content.Context;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 
+import java.util.ArrayList;
+
 /**
  * Created by ocittwo on 11/14/16.
  *
@@ -29,6 +31,13 @@ public class DrawRouteMaps {
         String url_route = FetchUrl.getUrl(origin, destination);
         DrawRoute drawRoute = new DrawRoute(googleMap);
         drawRoute.execute(url_route);
+        return instance;
+    }
+
+    public DrawRouteMaps draw(LatLng origin, LatLng destination, ArrayList<LatLng> waypoints, GoogleMap googleMap) {
+        String url_route = FetchUrl.getUrlWithWayPoints(origin, destination,waypoints);
+        DrawRoute drawRoute = new DrawRoute(googleMap);
+        drawRoute.execute(new String[]{url_route});
         return instance;
     }
 
