@@ -2,6 +2,8 @@ package com.ahmadrosid.lib.drawroutemap;
 
 import com.google.android.gms.maps.model.LatLng;
 
+import java.util.ArrayList;
+
 /**
  * Created by ocittwo on 11/14/16.
  *
@@ -16,6 +18,20 @@ public class FetchUrl {
         String str_dest = "destination=" + dest.latitude + "," + dest.longitude;
         String sensor = "sensor=false";
         String parameters = str_origin + "&" + str_dest + "&" + sensor;
+        String output = "json";
+        return "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters;
+    }
+
+    public static String getUrlWithWayPoints(LatLng origin, LatLng dest, ArrayList<LatLng> waypoints) {
+        String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
+        String str_dest = "destination=" + dest.latitude + "," + dest.longitude;
+        String str_waypoints = "waypoints=optimize:true|";
+        for(LatLng latLng : waypoints){
+            str_waypoints = str_waypoints + "via:" + latLng.latitude + "," + latLng.longitude + "|";
+        }
+        String sensor = "sensor=false";
+        String transit = "transit=walking";
+        String parameters = str_origin + "&" + str_dest +  "&" + str_waypoints + "&" + sensor + "&" + transit;
         String output = "json";
         return "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters;
     }
